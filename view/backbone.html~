@@ -15,7 +15,7 @@
         <!-- RequireJS -->
         <script data-main="js/bootstrap" src="../script/require/require.js"></script>
         
-        <link rel="stylesheet" type="text/css" href="style/video_style.css">
+        <link rel="stylesheet" type="text/css" href="../style/backbone.css">
     </head>
     <body>             
         <div id="outer_wrapper">
