@@ -6,7 +6,7 @@ paths: {
 
 // Libraries
 jquery: '../script/vendor/jquery-1.8.2.min.js,
-backbone:	'../script/vendor/backbone.092'
+backbone:	'../script/vendor/backbone-min.js'
 
 },
 
