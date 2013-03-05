@@ -16,17 +16,34 @@
         <script data-main="../script/bootstrap" src="../script/require/require.js"></script>
         
         <link rel="stylesheet" type="text/css" href="../style/backbone.css">
+ <style type="text/css">         
+            #text{
+                position: absolute;
+                left: 10px;
+                top: 100px;
+            }
+            #box{
+                position: absolute;
+                left: 100px;
+                top: 200px;
+                width: 100px;
+                height: 100px;
+                background-color: black;
+            }
+        </style>
     </head>
     <body>             
         <div id="outer_wrapper">
             <header>
             </header>
             <section>
+  <div id="text">Welcome</div>
+        <div id="box"></div>
+        <button onclick="animate.textAnimate();">click me</button>
 
-                    Hello World!!!!!!    
-
-                    
-Make conflict geethu 
+        <button onclick="animate.animateRight();">Turn Right</button>
+        <button onclick="animate.animateBottom();">To Bottom</button>
+        <button onclick="animate.animateBack();">Return</button>
 
             </section>              
             <footer>

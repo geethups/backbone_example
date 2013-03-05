@@ -23,13 +23,35 @@ exports: 'Backbone'
 
 define(['jquery'],function($){
 
-// Center text vertically.
-$('body').css('paddingTop', $(window).height()/2 - $('body').height() );
 
-// Apply some funny effetcs.
-$('body')
-.animate({ fontSize: '40pt' },1000)
-.animate({ fontSize: '10pt' },1000)
-;
 
 });
+var animate = (function(){
+ var path_value = 100;
+    // Put your private variables and functions here
+     
+    return { // Here are the public methods
+        textAnimate:function(){
+            $("#text").animate({
+                left: '150px'
+            });
+        },
+        animateRight:function(){
+            $("#box").animate({
+               left:'+='+path_value
+            });
+        },
+        animateBottom:function(){
+            $("#box").animate({
+               top:'+='+path_value 
+            });
+        },
+        animateBack:function(){
+            $("#box").animate({
+               top: '100',
+               left: '100'
+            });
+        }
+         
+    };
+})();
